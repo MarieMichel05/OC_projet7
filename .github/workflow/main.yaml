@@ -25,4 +25,4 @@ jobs:
 
     - name: Run flask api Tests
       run: |
-        python -m unittest discover -s ./tests -p 'apitest.py'  
+        python -m unittest discover -s ../tests -p 'apitest.py'  
