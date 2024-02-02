@@ -21,7 +21,7 @@ def predict():
         data = request.get_json(force=True)
         test_data = np.array(data['test_data'])
         scaled_data = scaler.transform(test_data)
-        prediction = model.predict_proba(scaled_data)[:, 1]  # Assuming a binary classification task
+        prediction = model.predict_proba(scaled_data)[:, 0]  # Assuming a binary classification task
 
         return jsonify({'prediction': prediction.tolist()})
     except Exception as e:
