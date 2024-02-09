@@ -2,6 +2,7 @@ import unittest
 import json
 from api import app
 import pandas as pd
+import sklearn
 
 
 class FlaskAppTest(unittest.TestCase):
