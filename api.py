@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import numpy as np
 import xgboost
 import pickle
+import sklearn
 
 app = Flask(__name__)
 
