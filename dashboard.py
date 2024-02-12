@@ -5,7 +5,7 @@ import pyarrow.parquet as pq
 
 # Function to make API request and get prediction
 def get_prediction(data):
-    api_url = "https://credit.herokuapp.com/predict"  # Update with your API URL
+    api_url = "https://credit-f7b3b911ecd1.herokuapp.com//predict"  # Update with your API URL
     test_data = {'test_data': data.drop(columns=['SK_ID_CURR']).values.tolist()}
     response = requests.post(api_url, json=test_data)
 
