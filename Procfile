@@ -1,1 +1,1 @@
-web: sh setup.sh && python api.py
+web: gunicorn api:app
